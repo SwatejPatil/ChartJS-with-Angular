@@ -1,0 +1,44 @@
+<!-- <div class="dropdown">
+    <button class="dropbtn">Sort Chart</button>
+    <div class="dropdown-content">
+      <a><button class="btn" (click)="sortday()">Sort Day</button></a>
+      <a><button class="btn" (click)="sortweek()">Sort Week</button></a>
+      <a><button class="btn" (click)="sortmonth()">Sort Month</button></a>
+
+      <div class="dropdown-content"><a><button class="btn" (click)="sortday()">Sort Custom</button>
+        <input (change)="filterData()" type="date" id="startdate" value="2022-04-01">
+        <input (change)="filterData()" type="date" id="enddate" value="2022-04-15">     
+      </a></div>
+      
+    </div>
+  </div> -->
+<!-- <button (click)="sortday()">sortday</button>
+<button (click)="sortweek()">sortweek</button> -->
+
+<div class="container">
+
+
+  
+  <div class="buttons">
+  <button class="btn" (click)="sortday()">Day</button>
+  <button class="btn" (click)="sortweek()">Week</button>
+  <button class="btn" (click)="sortmonth()">Month</button>
+
+  <button class="btn" id="more" (click)="redirect()">More</button>
+  <!-- <a class="btn" class="more" routerLink="/filter-line">More</a> -->
+  </div>
+  
+  
+  <div class="dropdown-content"><a><button class="btn" (click)="sortcustom()">Sort Custom</button>
+    <div id="myDIV2">
+      <input (change)="filterData()" type="date" id="startdate" value="2022-04-01">
+      <input (change)="filterData()" type="date" id="enddate" value="2022-04-15">   
+    </div>    
+  </a></div>
+  
+  <div class="chart-container">
+      <canvas  id="canvasL" >{{ chart }}</canvas>
+  </div>
+  
+  </div>
+  

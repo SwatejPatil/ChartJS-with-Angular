@@ -1,0 +1,43 @@
+<div class="chart-container">
+    <!-- <div class="nav">
+        <input type="checkbox" name="Meter1" (click)="sortday();">
+        <label for="Meter1"> Meter1 </label><br>
+        <input type="checkbox" name="Meter2" (click)="addParameters();">
+        <label for="Meter2"> Meter2 </label><br>
+        <input type="checkbox" name="Meter3" (click)="sortday();">
+        <label for="Meter3"> Meter3 </label><br>
+        <input type="checkbox" name="Meter4" (click)="addParameters();">
+        <label for="Meter3"> Meter4 </label><br>
+    </div> -->
+
+    <!-- <div class="nav">
+        <input type="checkbox" value="0" name="KVA"  id="KVA" (click)="addParameters();">
+        <label for="KVA"> KVA </label><br>
+
+        <input type="checkbox" value="1" name="KVAR" id="KVAR" (click)="addParameters();">
+        <label for="KVAR"> KVAR </label><br>
+
+        <input type="checkbox" value="2" name="KW"  id="KW" (click)="addParameters();">
+        <label for="KW"> KW </label><br>
+
+    </div> -->
+
+    <!-- <div class="dropdown">
+        <button class="dropbtn">Add Meter to Graph</button>
+        <div class="dropdown-content">
+            <input type="checkbox" name="Meter1" (click)="sortday();">
+            <label for="Meter1"> Meter1 </label><br>
+            <input type="checkbox" name="Meter2" (click)="addParameters();">
+            <label for="Meter2"> Meter2 </label><br>
+        </div>
+      </div> -->
+    <!-- <input type="checkbox" name="Meter1" (click)="sortday();">
+    <label for="Meter1"> Meter1 </label><br>
+    <input type="checkbox" name="Meter2" (click)="addParameters();">
+    <label for="Meter2"> Meter2 </label><br> -->
+
+    <button class="btn" (click)="meterKVA()">Meter1</button>
+    <button class="btn" (click)="meterKVAR()">Meter2</button>
+    <button class="btn" (click)="meterKW()">Meter3</button>
+    <canvas  id="canvas" >{{ chart }}</canvas>
+</div>
